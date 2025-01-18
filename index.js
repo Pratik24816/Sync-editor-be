@@ -18,7 +18,7 @@ mongoose.connect(mongoURI)
 
 const io=require('socket.io')(port,{
     cors:{
-        origin:"*",
+        origin:"http://localhost:5173",
         methods:["GET","POST"],
     }
 });
