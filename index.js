@@ -18,7 +18,7 @@ mongoose.connect(mongoURI)
 
 const io=require('socket.io')(port,{
     cors:{
-        origin:"https://sync-editor-xi.vercel.app/",
+        origin:"*",
         methods:["GET","POST"],
        allowedHeaders: ["Content-Type"],
     }
