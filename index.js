@@ -18,7 +18,7 @@ mongoose.connect(mongoURI)
 
 const io=require('socket.io')(port,{
     cors:{
-        origin:"*",
+        origin:"https://sync-editor-fe.onrender.com",
         methods:["GET","POST"],
        allowedHeaders: ["Content-Type"],
     }
